@@ -129,7 +129,7 @@ p {
     margin-left: 50px;
 }
 
-.contacts__mail, .contacts__tel {
+.contacts__link {
     display: flex;
     align-items: center;
     padding-top: 32px;
@@ -143,12 +143,11 @@ p {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts__mail:hover, .contacts__mail:focus, .contacts__tel:hover,
-.contacts__tel:focus {
+.contacts__link:hover, .contacts__link:focus {
     color: var(--accent-color);
 }
 
-.contacts__icon-mail, .contacts__icon-tel  {
+.contacts__icon, .contacts__icon {
     margin-right: 10px;
     fill: currentColor;
 
@@ -229,7 +228,7 @@ p {
     background-color: var(--button-background-color-active);
 }
 
-.hero__backdrop {
+.backdrop {
     position: fixed;
     top: 0;
     left: 0;
@@ -243,13 +242,13 @@ p {
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero__backdrop.is-hidden {
+.backdrop.is-hidden {
     visibility: hidden;
     pointer-events: none;
     opacity: 0;
 }
 
-.hero__backdrop.is-hidden .modal {
+.backdrop.is-hidden .modal {
 
     transform: translate(-50%, -50%) scale(0.9);
     opacity: 0;
