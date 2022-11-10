@@ -1,0 +1,35 @@
+.clients {
+    @extend %list;
+    display: flex;
+
+    &__item {
+        width: calc((100% - 150px)/6);
+    }
+
+    &__item + &__item {
+        margin-left: 30px;
+    }
+}
+
+.clients__link {
+    display: inline-block;
+    padding: 16px 32px;
+    border: 1px solid $svgIconsColor;
+    border-radius: 4px;
+
+    transition: border-color $transDuration $transTimingFunction;
+
+    &:hover, &:focus {
+        border-color: $accentColor;
+    }
+}
+
+.clients__logo {
+    fill: $svgIconsColor;
+
+    transition: fill $transDuration $transTimingFunction;
+
+    .clients__link:hover &, .clients__link:focus & {
+        fill: $accentColor;
+    }
+}

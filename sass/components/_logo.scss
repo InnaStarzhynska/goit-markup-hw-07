@@ -1,0 +1,19 @@
+.logo {
+    @extend %link;
+    font-family: $logoFont;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.19;
+
+    &__text {
+        color: $accentColor;
+    }
+}
+
+.header-nav__logo {
+    display: inline-block;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
+    color: $primeryTextColor;
+}

@@ -1,0 +1,36 @@
+.company-advantages {
+    @extend %list;
+    display: flex;
+
+    &__item {
+        text-align: left;
+        width: calc((100% - 90px)/4);
+    }
+
+    &__item + &__item {
+        margin-left: 30px;
+    }
+}
+
+.company-advantages__icon {
+    padding: 25px 100px;
+    margin-bottom: 30px;
+
+    background-color: $teamBgColor;
+    border-radius: 4px;
+}
+
+.company-advantages__title {
+    margin-bottom: 10px;
+
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.company-advantages__text {
+    color: $secondaryTextColor;
+
+    line-height: 1.71;
+}
