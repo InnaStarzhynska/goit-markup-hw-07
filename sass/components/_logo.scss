@@ -1,5 +1,7 @@
 .logo {
     @extend %link;
+    display: inline-block;
+
     font-family: $logoFont;
     font-size: 26px;
     font-weight: 700;
@@ -11,7 +13,6 @@
 }
 
 .header-nav__logo {
-    display: inline-block;
     padding-top: 24px;
     padding-bottom: 25px;
     margin-right: 93px;

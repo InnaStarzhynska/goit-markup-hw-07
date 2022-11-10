@@ -119,10 +119,10 @@
         letter-spacing: 0.01em;
         
         color: rgba(117, 117, 117, 0.5);}
-}
 
-.order-form__label:focus-within > .order-form__field {
-    border-color: $accentColor;
+    .order-form__label:focus-within > & {
+        border-color: $accentColor;
+    }
 }
 
 .order-form__icon {
@@ -143,22 +143,26 @@
     margin-bottom: 30px;
     margin-left: 52px;
     margin-right: 52px;
-}
 
-.license__checkbox {
-    appearance: none;
-    -moz-appearance: none;
-    -webkit-appearance: none;
+    &__checkbox {
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        
+        position: absolute;
+    }
 
-    position: absolute;
-}
+    &__label {
+        position: relative;
+        padding-left: 25px;
+        
+        line-height: 1.71;
+        color: $secondaryTextColor;
+    }
 
-.license__label {
-    position: relative;
-    padding-left: 25px;
-
-    line-height: 1.71;
-    color: $secondaryTextColor;
+    &__link {
+        color: $accentColor;
+    }
 }
 
 .license__icon {
@@ -189,10 +193,6 @@
     transform: translateY(-50%);
 
     z-index: 1;
-}
-
-.license__link {
-    color: $accentColor;
 }
 
 .order-form__button {

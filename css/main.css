@@ -77,6 +77,7 @@ p {
 }
 
 .logo {
+  display: inline-block;
   font-family: "Raleway", sans-serif;
   font-size: 26px;
   font-weight: 700;
@@ -87,7 +88,6 @@ p {
 }
 
 .header-nav__logo {
-  display: inline-block;
   padding-top: 24px;
   padding-bottom: 25px;
   margin-right: 93px;
@@ -190,7 +190,6 @@ p {
   background-position: center;
   background-size: cover;
 }
-
 .hero__title {
   margin-bottom: 30px;
   margin-left: auto;
@@ -204,7 +203,6 @@ p {
   text-transform: uppercase;
   text-align: center;
 }
-
 .hero__button {
   padding: 10px 32px;
   min-width: 216px;
@@ -324,7 +322,6 @@ p {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-
 .order-form__label:focus-within > .order-form__field {
   border-color: #2196F3;
 }
@@ -346,19 +343,20 @@ p {
   margin-left: 52px;
   margin-right: 52px;
 }
-
 .license__checkbox {
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
   position: absolute;
 }
-
 .license__label {
   position: relative;
   padding-left: 25px;
   line-height: 1.71;
   color: #757575;
+}
+.license__link {
+  color: #2196F3;
 }
 
 .license__icon {
@@ -386,10 +384,6 @@ p {
   z-index: 1;
 }
 
-.license__link {
-  color: #2196F3;
-}
-
 .order-form__button {
   margin-left: 164px;
   margin-right: 164px;
@@ -406,14 +400,12 @@ p {
 .company-advantages__item + .company-advantages__item {
   margin-left: 30px;
 }
-
 .company-advantages__icon {
   padding: 25px 100px;
   margin-bottom: 30px;
   background-color: #F5F4FA;
   border-radius: 4px;
 }
-
 .company-advantages__title {
   margin-bottom: 10px;
   font-size: 14px;
@@ -421,7 +413,6 @@ p {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-
 .company-advantages__text {
   color: #757575;
   line-height: 1.71;
@@ -447,11 +438,9 @@ p {
 .work__item + .work__item {
   margin-left: 30px;
 }
-
 .work__image {
   display: block;
 }
-
 .work__text {
   position: absolute;
   left: 0;
@@ -462,7 +451,6 @@ p {
   padding: 27px 0;
   text-align: center;
 }
-
 .work__title {
   color: #FFFFFF;
   text-transform: uppercase;
@@ -484,19 +472,16 @@ p {
 .team-list__item + .team-list__item {
   margin-left: 30px;
 }
-
 .team-list__image {
   display: block;
   margin-bottom: 30px;
 }
-
 .team-list__title {
   margin-bottom: 10px;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.19;
 }
-
 .team-list__text {
   margin-bottom: 16px;
   color: #757575;
@@ -577,11 +562,25 @@ p {
   align-items: baseline;
   text-align: left;
 }
-
 .page-footer__logo {
+  margin-bottom: 20px;
+  color: #FFFFFF;
+}
+.page-footer__text {
   display: inline-block;
   margin-bottom: 20px;
   color: #FFFFFF;
+  text-transform: uppercase;
+  line-height: 1.14;
+}
+.page-footer__links {
+  margin-left: 70px;
+}
+.page-footer__social-links {
+  margin: 0;
+}
+.page-footer__link {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .address__item:not(:last-child) {
@@ -601,26 +600,6 @@ p {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.page-footer__text {
-  display: inline-block;
-  margin-bottom: 20px;
-  color: #FFFFFF;
-  text-transform: uppercase;
-  line-height: 1.14;
-}
-
-.page-footer__links {
-  margin-left: 70px;
-}
-
-.page-footer__social-links {
-  margin: 0;
-}
-
-.page-footer__link {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
 .social-links__icon--white {
   fill: #FFFFFF;
 }
@@ -628,7 +607,6 @@ p {
 .footer-form {
   margin-left: 93px;
 }
-
 .footer-form__label {
   display: block;
   margin-bottom: 20px;
@@ -636,7 +614,13 @@ p {
   font-weight: 700;
   line-height: 1.14;
   color: #FFFFFF;
-  display: block;
+}
+.footer-form__button {
+  padding: 10px 28px;
+}
+.footer-form__icon {
+  margin-left: 10px;
+  vertical-align: middle;
 }
 
 .footer-form__field {
@@ -666,15 +650,6 @@ p {
   font-size: 16px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
-}
-
-.footer-form__button {
-  padding: 10px 28px;
-}
-
-.footer-form__icon {
-  margin-left: 10px;
-  vertical-align: middle;
 }
 
 .filters {
@@ -711,6 +686,37 @@ p {
   display: flex;
   flex-wrap: wrap;
 }
+.projects__image {
+  display: block;
+}
+.projects__text {
+  padding: 20px 24px;
+  border: 1px solid #EEEEEE;
+  border-top-color: transparent;
+  text-align: left;
+}
+.projects__title {
+  margin-bottom: 4px;
+  color: #212121;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.projects__type {
+  color: #757575;
+  font-size: 16px;
+  line-height: 1.88;
+}
+.projects__thumb {
+  position: relative;
+  overflow: hidden;
+}
+.projects__description {
+  text-align: left;
+  font-size: 18px;
+  line-height: 1.56;
+  color: #FFFFFF;
+}
 
 .projects__item {
   width: calc((100% - 60px) / 3);
@@ -730,36 +736,6 @@ p {
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 
-.projects__image {
-  display: block;
-}
-
-.projects__text {
-  padding: 20px 24px;
-  border: 1px solid #EEEEEE;
-  border-top-color: transparent;
-  text-align: left;
-}
-
-.projects__title {
-  margin-bottom: 4px;
-  color: #212121;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-}
-
-.projects__type {
-  color: #757575;
-  font-size: 16px;
-  line-height: 1.88;
-}
-
-.projects__thumb {
-  position: relative;
-  overflow: hidden;
-}
-
 .projects__overlay {
   position: absolute;
   top: 0;
@@ -773,11 +749,4 @@ p {
 }
 .projects__link:hover .projects__overlay, .projects__link:focus .projects__overlay {
   transform: translateY(0);
-}
-
-.projects__description {
-  text-align: left;
-  font-size: 18px;
-  line-height: 1.56;
-  color: #FFFFFF;
 }/*# sourceMappingURL=main.css.map */
