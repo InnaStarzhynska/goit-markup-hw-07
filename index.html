@@ -12,7 +12,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <title>WebStudio - Студія</title>
   </head>
   <body>
@@ -20,23 +20,23 @@
     <header class="page-header">
       <div class="page-header__container container">
         <nav class="header-nav">
-          <a class="logo header-nav__logo link" href="./index.html"><span class="logo__text">Web</span>Studio</a>
-          <ul class="header-nav__pages list">
-            <li class="header-nav__item"><a class="header-nav__link link current" href="./index.html">Студія</a></li>
-            <li class="header-nav__item"><a class="header-nav__link link" href="./portfolio.html">Портфоліо</a></li>
-            <li class="header-nav__item"><a class="header-nav__link link" href="#">Контакти</a></li>
+          <a class="logo header-nav__logo" href="./index.html"><span class="logo__text">Web</span>Studio</a>
+          <ul class="header-nav__pages">
+            <li class="header-nav__item"><a class="header-nav__link current" href="./index.html">Студія</a></li>
+            <li class="header-nav__item"><a class="header-nav__link" href="./portfolio.html">Портфоліо</a></li>
+            <li class="header-nav__item"><a class="header-nav__link" href="#">Контакти</a></li>
           </ul>
         </nav>
-        <ul class="contacts list">
+        <ul class="contacts">
           <li class="contacts__item">
-            <a class="contacts__link link" href="mailto:info@devstudio.com">
+            <a class="contacts__link" href="mailto:info@devstudio.com">
               <svg class="contacts__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use></svg
               >info@devstudio.com</a
             >
           </li>
           <li class="contacts__item">
-            <a class="contacts__link link" href="tel:+380961111111">
+            <a class="contacts__link" href="tel:+380961111111">
               <svg class="contacts__icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use></svg
               >+38 096 111 11 11</a
@@ -62,7 +62,7 @@
             </button>
             <form class="order-form" name="order">
               <h2 class="order-form__title">Залиште свої дані, ми вам передзвонимо</h2>
-              <ul class="order-form__list list">
+              <ul class="order-form__list">
                 <li class="order-form__item">
                   <label class="order-form__label"
                     >Ім'я
@@ -122,7 +122,7 @@
       <section class="section">
         <div class="container">
           <h2 class="visually-hidden">Переваги компанії</h2>
-          <ul class="company-advantages list">
+          <ul class="company-advantages">
             <li class="company-advantages__item">
               <div class="company-advantages__icon">
                 <svg width="70" height="70">
@@ -174,7 +174,7 @@
       <section class="section section--top">
         <div class="container">
           <h2 class="section__title">Чим ми займаємося</h2>
-          <ul class="work list">
+          <ul class="work">
             <li class="work__item">
               <img
                 class="work__image"
@@ -218,7 +218,7 @@
       <section class="section section--gray">
         <div class="container">
           <h2 class="section__title">Наша команда</h2>
-          <ul class="team-list list">
+          <ul class="team-list">
             <li class="team-list__item">
               <img
                 class="team-list__image"
@@ -229,7 +229,7 @@
               />
               <h3 class="team-list__title">Ігор Дем'яненко</h3>
               <p class="team-list__text">Product Designer</p>
-              <ul class="social-links list">
+              <ul class="social-links">
                 <li class="social-links__item">
                   <a class="social-links__link" aria-label="instagram" href="#"
                     ><svg class="social-links__icon" width="20" height="20">
@@ -266,7 +266,7 @@
               />
               <h3 class="team-list__title">Ольга Рєпіна</h3>
               <p class="team-list__text">Frontend Developer</p>
-              <ul class="social-links list">
+              <ul class="social-links">
                 <li class="social-links__item">
                   <a class="social-links__link" aria-label="instagram" href="#"
                     ><svg class="social-links__icon" width="20" height="20">
@@ -303,7 +303,7 @@
               />
               <h3 class="team-list__title">Микола Тарасов</h3>
               <p class="team-list__text">Marketing</p>
-              <ul class="social-links list">
+              <ul class="social-links">
                 <li class="social-links__item">
                   <a class="social-links__link" aria-label="instagram" href="#"
                     ><svg class="social-links__icon" width="20" height="20">
@@ -340,7 +340,7 @@
               />
               <h3 class="team-list__title">Михайло Єрмаков</h3>
               <p class="team-list__text">UI Designer</p>
-              <ul class="social-links list">
+              <ul class="social-links">
                 <li class="social-links__item">
                   <a class="social-links__link" aria-label="instagram" href="#"
                     ><svg class="social-links__icon" width="20" height="20">
@@ -373,7 +373,7 @@
       <section class="section">
         <div class="container">
           <h2 class="section__title">Постійні клієнти</h2>
-          <ul class="clients list">
+          <ul class="clients">
             <li class="clients__item">
               <a href="#" class="clients__link"
                 ><svg class="clients__logo" width="106" height="60">
@@ -418,12 +418,12 @@
     <footer class="page-footer">
       <div class="container page-footer__container">
         <div class="page-footer__contacts">
-          <a class="logo page-footer__logo link" href="./index.html"><span class="logo__text">Web</span>Studio</a>
+          <a class="logo page-footer__logo" href="./index.html"><span class="logo__text">Web</span>Studio</a>
           <address class="address">
-            <ul class="address__list list">
+            <ul class="address__list">
               <li class="address__item">
                 <a
-                  class="address__link link"
+                  class="address__link"
                   href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
@@ -431,17 +431,17 @@
                 >
               </li>
               <li class="address__item">
-                <a class="address__link address__link--translucent link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <a class="address__link address__link--translucent" href="mailto:info@devstudio.com">info@devstudio.com</a>
               </li>
               <li class="address__item">
-                <a class="address__link address__link--translucent link" href="tel:+380961111111">+38 096 111 11 11</a>
+                <a class="address__link address__link--translucent" href="tel:+380961111111">+38 096 111 11 11</a>
               </li>
             </ul>
           </address>
         </div>
         <div class="page-footer__links">
           <b class="page-footer__text">Приєднуйтесь</b>
-          <ul class="social-links page-footer__social-links list">
+          <ul class="social-links page-footer__social-links">
             <li class="social-links__item">
               <a class="social-links__link page-footer__link" aria-label="instagram" href="#"
                 ><svg class="social-links__icon social-links__icon--white" width="20" height="20">
